@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato - Pet Help</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9fafb;
+      color: #333;
+    }
+    .container {
+      max-width: 700px;
+      margin: 60px auto;
+      padding: 40px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    }
+    h1 {
+      text-align: center;
+      color: #222;
+      margin-bottom: 20px;
+    }
+    p {
+      text-align: center;
+      color: #666;
+      margin-bottom: 40px;
+    }
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 24px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+      resize: vertical;
+    }
+    form button {
+      background-color: #10b981;
+      color: white;
+      border: none;
+      padding: 14px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    form button:hover {
+      background-color: #0e9e6e;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Fale com o Pet Help</h1>
+    <p>Tem dúvidas, sugestões ou quer apenas conversar? Preencha o formulário abaixo e responderemos o mais rápido possível!</p>
+
+    <form action="https://formsubmit.co/helpetsuporte@gmail.com" method="POST">
+      <!-- Campos obrigatórios -->
+      <label for="nome">Seu nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">Seu e-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensagem">Sua mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+
+      <!-- Configurações extras -->
+      <input type="hidden" name="_subject" value="Novo Contato do Pet Help">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input a href="http://127.0.0.1:5500/HACKTEEN/Obrigado.html" type="hidden" name="_next" value="obrigado.html">
+        
+
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+  </div>
+
+  <div class="footer">
+    © 2025 Pet Help — Desenvolvido com amor aos animais 💚
+  </div>
+
+</body>
+</html>
